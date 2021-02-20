@@ -9,6 +9,7 @@
   "hassio_api": true,
   "homeassistant_api": false,
   "host_network": false,
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "map": [
     "media:rw",
     "share:rw",
