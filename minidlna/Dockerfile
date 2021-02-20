@@ -5,7 +5,7 @@ FROM ${BUILD_FROM}
 COPY rootfs /
 
 # Setup base
-RUN apk add --no-cache minidlna transmission transmission-daemon
+RUN apk add --no-cache minidlna
 
 # Build arugments
 ARG BUILD_ARCH

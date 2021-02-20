@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "slug": "minidlna",
   "description": "Install ReadyMedia (MiniDLNA) to your Hass.io host",
-  "url": "https://github.com/bboti86",
+  "url": "https://github.com/zoroz/addon-torrdlna",
   "startup": "services",
   "boot": "auto",
   "hassio_api": true,
