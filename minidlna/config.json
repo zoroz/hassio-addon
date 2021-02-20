@@ -1,6 +1,6 @@
 {
   "name": "MiniDLNA",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "slug": "minidlna",
   "description": "Install ReadyMedia (MiniDLNA) to your Hass.io host",
   "url": "https://github.com/zoroz/addon-torrdlna",
@@ -11,6 +11,7 @@
   "host_network": false,
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "map": [
+    "config:rw",
     "media:rw",
     "share:rw",
     "ssl"
