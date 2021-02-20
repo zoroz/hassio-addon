@@ -4,7 +4,6 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 # Copy root filesystem
 COPY rootfs /
-ADD minidlna.conf /etc/minidlna.conf
 
 # Setup base
 RUN apk add --no-cache minidlna
