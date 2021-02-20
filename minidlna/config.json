@@ -1,6 +1,6 @@
 {
   "name": "MiniDLNA",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "slug": "minidlna",
   "description": "Install ReadyMedia (MiniDLNA) to your Hass.io host",
   "url": "https://github.com/zoroz/addon-torrdlna",
@@ -10,7 +10,7 @@
   "homeassistant_api": false,
   "host_network": false,
   "ports": {
-    "8083": 8083
+    "8200": 8200
   },
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "map": [
