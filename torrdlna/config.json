@@ -1,16 +1,23 @@
 {
-  "name": "TorrentDLNA",
+  "name": "MiniDLNA",
   "version": "0.1.1",
-  "slug": "torrdlna",
-  "description": "Install ReadyMedia (MiniDLNA) and Transmission to your Hass.io host",
+  "slug": "minidlna",
+  "description": "Install ReadyMedia (MiniDLNA) to your Hass.io host",
   "url": "https://github.com/bboti86",
   "startup": "services",
   "boot": "auto",
-  "host_network": true,
+  "hassio_api": true,
+  "homeassistant_api": false,
+  "host_network": false,
+  "map": [
+    "media:rw",
+    "share:rw",
+    "ssl"
+  ],
   "options": {
   },
   "schema": {
   },
-  "devices": ["/dev/sda1:/dev/sda1:rwm"],
-  "privileged": ["SYS_ADMIN"]
+  "devices": ["/dev/net/tun"],
+  "privileged": ["NET_ADMIN"]
 }

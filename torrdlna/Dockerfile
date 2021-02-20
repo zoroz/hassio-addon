@@ -15,13 +15,13 @@ ARG BUILD_VERSION
 
 # Labels
 LABEL \
-    io.hass.name="TorrentDLNA" \
-    io.hass.description="Install ReadyMedia (MiniDLNA) and Transmission to your Hass.io host" \
+    io.hass.name="MiniDLNA" \
+    io.hass.description="Install ReadyMedia (MiniDLNA) to your Hass.io host" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Botond Barabas <bboti86k@addons.community>" \
-    org.label-schema.description="Install ReadyMedia (MiniDLNA) and Transmission to your Hass.io host" \
+    maintainer="Zoro Zorec" \
+    org.label-schema.description="Install ReadyMedia (MiniDLNA) to your Hass.io host" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Tor" \
     org.label-schema.schema-version="1.0" \
