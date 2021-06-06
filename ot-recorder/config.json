@@ -1,0 +1,28 @@
+{
+  "name": "ot-recorder",
+  "version": "0.1.0",
+  "slug": "ot-recorder",
+  "description": "Install ot-recorder to your Hass.io host",
+  "url": "https://github.com/zoroz/addon-torrdlna",
+  "startup": "services",
+  "boot": "auto",
+  "hassio_api": true,
+  "homeassistant_api": false,
+  "host_network": true,
+  "ports": {
+    "8083/tcp": 8083
+  },
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "map": [
+    "config:rw",
+    "media:rw",
+    "share:rw",
+    "ssl"
+  ],
+  "options": {
+  },
+  "schema": {
+  },
+  "devices": ["/dev/net/tun"],
+  "privileged": ["NET_ADMIN"]
+}
