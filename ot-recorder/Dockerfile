@@ -3,7 +3,7 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 # Copy root filesystem
-COPY rootfs /
+#COPY rootfs /
 
 # Setup base
 #RUN apk add --no-cache minidlna
