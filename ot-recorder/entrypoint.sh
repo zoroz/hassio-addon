@@ -7,6 +7,9 @@ if [[ $(id -u) -eq 0 ]]; then
   exec su appuser -- "$0" "$@"
 fi
 
+echo "Make Config File"
+/makeconf.sh
+
 # Load Default recorder.conf if not available
 if [ ! -f /config/recorder.conf ]; then
 	  cp /etc/default/recorder.conf /config/recorder.conf

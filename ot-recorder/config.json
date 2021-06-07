@@ -1,6 +1,6 @@
 {
   "name": "ot-recorder",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "slug": "ot-recorder",
   "description": "Install ot-recorder to your Hass.io host",
   "url": "https://github.com/zoroz/addon-torrdlna",
@@ -9,9 +9,8 @@
   "hassio_api": true,
   "homeassistant_api": false,
   "host_network": true,
-  "ports": {
-    "8083/tcp": 8083
-  },
+  "panel_icon": "mdi:map-clock",
+
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "map": [
     "config:rw",
@@ -20,9 +19,27 @@
     "ssl"
   ],
   "options": {
-  },
-  "schema": {
-  },
-  "devices": ["/dev/net/tun"],
+    "localHost": "0.0.0.0",
+    "mqttServer": "core-mosquitto",
+    "mqttPort": 1883,
+    "mqttUser": "username",
+    "mqttPassword": "password",
+    "topic": "owntracks/#"
+},
+"schema": {
+    "localHost": "str",
+    "mqttServer": "str",
+    "mqttPort": "int",
+    "mqttUser": "str?",
+    "mqttPassword": "str?",
+    "topic": "str"
+},
+"ports": {
+  "8083/tcp": 8083
+}, 
+"ports_description": {
+  "8083/tcp": "Owntracks WebUI Port"
+},
+"webui": "http://[HOST]:[PORT:8083]",
   "privileged": ["NET_ADMIN"]
 }
