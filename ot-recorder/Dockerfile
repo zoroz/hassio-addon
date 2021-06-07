@@ -37,10 +37,10 @@ RUN apk add --no-cache --virtual .build-deps \
 RUN apk add --no-cache \
 	curl jq
 
-VOLUME ["/store", "/config"]
+VOLUME ["/config"]
 
-COPY recorder.conf /config/recorder.conf
-COPY JSON.lua /config/JSON.lua
+COPY data/recorder.conf /config/recorder.conf
+COPY data/JSON.lua /config/JSON.lua
 
 # If you absolutely need health-checking, enable the option below.  Keep in
 # mind that until https://github.com/systemd/systemd/issues/6432 is resolved,
