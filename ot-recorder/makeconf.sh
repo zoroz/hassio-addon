@@ -8,7 +8,7 @@ CONFIG_OUT=/config/recorder.conf
 > $CONFIG_OUT
 
 OUTPUT="OTR_CAPATH = \"/config\"\n" 
-OUTPUT=$OUTPUT"OTR_STORAGEDIR= \"/data/store\"\n" 
+OUTPUT=$OUTPUT"OTR_STORAGEDIR= \"/addons/ot-recorder\"\n" 
 OUTPUT=$OUTPUT"OTR_HTTPHOST = \"$(jq --raw-output '.localHost' $CONFIG_FILE)\"\n"
 OUTPUT=$OUTPUT"OTR_HOST = \"$(jq --raw-output '.mqttServer' $CONFIG_FILE)\"\n"
 OUTPUT=$OUTPUT"OTR_PORT = \"$(jq --raw-output '.mqttPort' $CONFIG_FILE)\"\n"
