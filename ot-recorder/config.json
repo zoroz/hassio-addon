@@ -1,6 +1,6 @@
 {
   "name": "ot-recorder",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "slug": "ot-recorder",
   "description": "Install ot-recorder to your Hass.io host",
   "url": "https://github.com/zoroz/addon-torrdlna",
