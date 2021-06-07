@@ -6,6 +6,7 @@ LABEL authors="Jan-Piet Mens <jpmens@gmail.com>, Giovanni Angoli <juzam76@gmail.
 ARG recorder_version=0.8.6
 
 COPY entrypoint.sh /entrypoint.sh
+COPY makeconf.sh /makeconf.sh
 COPY config.mk /config.mk
 COPY recorder.conf /etc/default/recorder.conf
 COPY recorder-health.sh /usr/local/sbin/recorder-health.sh
