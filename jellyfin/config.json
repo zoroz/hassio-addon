@@ -37,6 +37,5 @@
     "PUID": "int",
     "PGID": "int",
     "TZ": "str?"
-  },
-  "image": "linuxserver/jellyfin:arm64v8-10.8.3"
+  }
 }
