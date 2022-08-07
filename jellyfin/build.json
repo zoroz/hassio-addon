@@ -1,13 +1,10 @@
 {
-    "build_from_template": {
-        "image": "linuxserver/jellyfin",
-        "version": "latest"
-    },
-    "build_from": {
-        "armhf": "linuxserver/jellyfin:arm32v7-latest",
-        "aarch64": "linuxserver/jellyfin:arm64v8-latest",
-        "amd64": "linuxserver/jellyfin:amd64-latest"
-    },
-    "squash": false,
-    "args": {}
+  "build_from": {
+    "aarch64": "lscr.io/linuxserver/jellyfin:arm64v8-latest",
+    "amd64": "lscr.io/linuxserver/jellyfin:amd64-latest",
+    "armv7": "lscr.io/linuxserver/jellyfin:arm32v7-latest"
+  },
+  "codenotary": {
+    "signer": "alexandrep.github@gmail.com"
+  }
 }
